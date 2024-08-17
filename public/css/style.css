@@ -1,0 +1,121 @@
+/* Estilos generales para el cuerpo */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4D9D0; /* Color de fondo general */
+}
+
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px;
+}
+
+/* Estilos para la sección de inicio de sesión */
+section.login-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Ocupa el 80% del ancho de la ventana */
+    height: 80vh; /* Ocupa el 80% de la altura de la ventana */
+    border-radius: 8px;
+    background-color: #fff; /* Color de fondo blanco para la sección */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenedor */
+}
+
+/* Estilos para las columnas dentro de la sección */
+.row {
+    margin: 0;
+}
+
+.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para la imagen del logo */
+.logo-img {
+    max-height: 400px; /* Tamaño aumentado para la imagen */
+    max-width: 100%; /* Ajusta el ancho para mantener la proporción */
+    object-fit: cover;
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input.form-control {
+    border-radius: 4px;
+    border: 1px solid #D9ABAB;
+}
+
+button.btn-primary {
+    background-color: #921A40; /* Color de fondo del botón */
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+button.btn-primary:hover {
+    background-color: #78163D; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para enlaces en el formulario */
+a {
+    color: #921A40; /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: bold; /* Acentuar los enlaces */
+}
+
+a:hover {
+    color: #C75B7A; /* Color al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #921A40;
+    color: #D9ABAB;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #D9ABAB;
+}
+
+/* Estilos para enlaces en el formulario */
+.login-form a {
+    color: #921A40; /* Color de los enlaces */
+    text-decoration: none;
+    font-weight: normal; /* Acentuar los enlaces */
+}
+
+.login-form a:hover {
+    color: #C75B7A; /* Color al pasar el ratón */
+    text-decoration: underline;
+}

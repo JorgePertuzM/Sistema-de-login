@@ -1,0 +1,47 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #F4F4F4; /* Fondo claro para toda la página */
+}
+
+/* Estilo del contenedor */
+.container {
+    max-width: 600px; /* Limitar el ancho del perfil */
+    margin-top: 40px; /* Separar del borde superior */
+}
+
+/* Estilo para la tarjeta del perfil */
+.profile-card {
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo del botón de logout */
+.btn-danger {
+    background-color: #921A40; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.btn-danger:hover {
+    background-color: #C75B7A; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #921A40; /* Color de fondo */
+    color: #D9ABAB; /* Color del texto */
+    padding: 10px;
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #D9ABAB; /* Borde superior */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilo para el logo */
+header img {
+    max-height: 150px; /* Altura máxima del logo */
+    object-fit: contain; /* Ajustar imagen */
+}

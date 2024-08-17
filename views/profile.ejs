@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - ProMedical</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/profile.css"> <!-- Archivo CSS específico para el perfil -->
+</head>
+<body>
+    <header class="text-center my-4">
+        <img src="/images/logo.PNG" alt="Logo de ProMedical" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+    </header>
+
+    <div class="container">
+        <h2 class="text-center mb-4">Perfil de Usuario</h2>
+        <div class="card profile-card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Nombre de Usuario: <%= user.NombreUsuario %></h5>
+                <p class="card-text">Correo Electrónico: <%= user.emailUsuario %></p>
+                <p class="card-text">Nombre Completo: <%= user.nombreCompleto %></p>
+                <p class="card-text">Tipo de Usuario: <%= user.idTipoUsuarioFk %></p>
+                <p class="card-text">Estado: <%= user.idStatusUsuarioFk %></p>
+                <a href="/auth/logout" class="btn btn-danger mt-3">Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2024 ProMedical. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/alertwin.js"></script>
+</body>
+</html>

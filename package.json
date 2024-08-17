@@ -1,0 +1,22 @@
+{
+  "name": "promedicalapp",
+  "version": "1.0.0",
+  "description": "ProMedicalApp/\r │\r ├── app.js\r ├── package.json\r ├── config/\r │   └── dbConfig.js\r ├── controllers/\r │   ├── authController.js\r │   ├── userController.js\r │   └── passwordController.js\r ├── models/\r │   ├── User.js\r │   ├── UserType.js\r │   ├── UserStatus.js\r │   └── AccessLevel.js\r ├── routes/\r │   ├── authRoutes.js\r │   ├── userRoutes.js\r │   └── passwordRoutes.js\r ├── views/\r │   ├── index.ejs\r │   ├── login.ejs\r │   ├── register.ejs\r │   ├── resetPassword.ejs\r │   ├── setNewPassword.ejs\r │   └── profile.ejs\r ├── public/\r │   ├── css/\r │   │   └── style.css\r │   ├── js/\r │   │   └── alertwin.js\r │   └── images/\r └── utils/\r     └── hashPassword.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^6.9.14"
+  }
+}

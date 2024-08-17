@@ -1,0 +1,87 @@
+/* Estilos generales para el formulario de registro */
+.container {
+    max-width: 900px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+header img {
+    max-height: 80px; /* Ajusta la altura máxima del logo */
+    object-fit: contain; /* Asegura que el logo se ajuste sin distorsión */
+}
+
+/* Estilos específicos para la imagen del logo */
+.logo-img {
+    max-height: 100px; /* Limita la altura máxima del logo */
+    object-fit: contain; /* Ajusta la imagen para que se contenga dentro del área asignada */
+}
+
+form {
+    background-color: #F4D9D0; /* Fondo suave para el formulario */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+form .form-group label {
+    color: #921A40; /* Color de las etiquetas */
+}
+
+form .btn-primary {
+    background-color: #921A40; /* Color de fondo del botón */
+    border-color: #921A40; /* Color del borde del botón */
+}
+
+form .btn-primary:hover {
+    background-color: #C75B7A; /* Color de fondo al pasar el ratón */
+    border-color: #C75B7A; /* Color del borde al pasar el ratón */
+}
+
+footer {
+    background-color: #F4D9D0; /* Color de fondo del footer */
+    border-top: 1px solid #E0E0E0; /* Línea superior */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen del párrafo */
+    color: #921A40; /* Color del texto en el footer */
+}
+
+.btn-link {
+    color: #921A40; /* Color del enlace */
+    font-weight: bold; /* Negrita para los enlaces */
+}
+
+.btn-link:hover {
+    color: #C75B7A; /* Color del enlace al pasar el ratón */
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+
+/* Estilos para enlaces con la clase link-click */
+.link-click {
+    color: #921A40; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: normal; /* Normal peso de fuente */
+}
+
+.link-click:hover {
+    color: #C75B7A; /* Color al pasar el ratón */
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #921A40; /* Color de fondo */
+    color: #D9ABAB; /* Color del texto */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #D9ABAB; /* Color del borde superior */
+    text-align: center; /* Centra el texto */
+}
+
+/* Asegúrate de que la clase footer no esté sobrescrita por otra regla */
+footer p {
+    color: #D9ABAB; /* Color del texto en el pie de página */
+}

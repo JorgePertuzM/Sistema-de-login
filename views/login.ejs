@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <main class="d-flex align-items-center justify-content-center vh-100">
+        <section class="login-form bg-light p-4 rounded shadow-sm">
+            <div class="row h-100">
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="/images/logo.PNG" alt="Descripción de la imagen" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h2 class="text-center mb-4">Iniciar Sesión</h2>
+                    <form action="/auth/login" method="POST">
+                        <div class="form-group">
+                            <label for="NombreUsuario">Nombre de Usuario</label>
+                            <input type="text" id="NombreUsuario" name="NombreUsuario" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="idTipoUsuarioFk">Rol</label>
+                            <select id="idTipoUsuarioFk" name="idTipoUsuarioFk" class="form-control" required>
+                                <% roles.forEach(role => { %>
+                                    <option value="<%= role.idTipoUsuario %>"><%= role.tipoUsuario %></option>
+                                <% }); %>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+                    </form>
+                    <div class="mt-4 text-center">
+                        <a href="/auth/resetpassword" class="d-block mb-2">Olvidé mi contraseña</a>
+                        <a href="/auth/register" class="d-block">Crear una cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 ProMedical. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/alertwin.js"></script>
+</body>
+</html>

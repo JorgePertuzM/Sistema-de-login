@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/register.css"> <!-- Archivo CSS específico para el registro -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header class="text-center my-4">
+        <img src="/images/logo.PNG" alt="Logo de ProMedical" class="img-fluid logo-img">
+    </header>
+    
+    <div class="container">
+        <h2 class="text-center mb-4">Registro de Usuario</h2>
+        <form action="/auth/register" method="POST" class="bg-light p-4 rounded shadow-sm">
+            <div class="form-group">
+                <label for="NombreUsuario">Nombre de Usuario</label>
+                <input type="text" id="NombreUsuario" name="NombreUsuario" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasenaConfirm">Confirmar Contraseña</label>
+                <input type="password" id="contrasenaConfirm" name="contrasenaConfirm" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="idTipoUsuarioFk">Tipo de Usuario</label>
+                <select id="idTipoUsuarioFk" name="idTipoUsuarioFk" class="form-control" required>
+                    <% tiposUsuario.forEach(tipo => { %>
+                        <option value="<%= tipo.idTipoUsuario %>"><%= tipo.tipoUsuario %></option>
+                    <% }); %>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="emailUsuario">Correo Electrónico</label>
+                <input type="email" id="emailUsuario" name="emailUsuario" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Registrar</button>
+        </form>
+        <div class="mt-3 text-center">
+            <a href="/auth/login" class="link-click">Ya tengo una cuenta</a>
+        </div>
+    </div>
+    
+    <footer class="text-center py-3">
+        <p>&copy; 2024 ProMedical. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="/js/alertwin.js"></script>
+</body>
+</html>
